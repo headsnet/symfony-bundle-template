@@ -1,0 +1,41 @@
+{
+  "name": "headsnet/acme-tools-bundle",
+  "type": "library",
+  "description": "Tools and helpers for functionality needed in larger Symfony projects",
+  "keywords": ["symfony", "php"],
+  "homepage": "https://github.com/headsnet/acme-tools-bundle",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/headsnet/acme-tools-bundle/issues"
+  },
+  "require": {
+    "php": ">=8.2",
+    "symfony/config": "^6.0 || ^7.0",
+    "symfony/dependency-injection": "^6.0 || ^7.0",
+    "symfony/http-kernel": "^6.0 || ^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0",
+    "nyholm/symfony-bundle-test": "^3.0",
+    "phpstan/phpstan": "^1.11",
+    "symplify/easy-coding-standard": "^12.2"
+  },
+  "suggest": {
+
+  },
+  "autoload": {
+    "psr-4": {
+      "Headsnet\\AcmeToolsBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Headsnet\\AcmeToolsBundle\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": true
+    }
+  }
+}
